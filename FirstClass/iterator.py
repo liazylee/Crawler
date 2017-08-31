@@ -42,7 +42,7 @@ def getpagecontent(cur_url,cur_level):
         print "BadStatusline"
         return
     except IOError:
-        print 'IO Error at'+filename
+        print 'IO Error at '+filename
         return
     downloaded_urls.append(hashlib.md5(cur_url).hexdigest())
     du_file.write(hashlib.md5(cur_url).hexdigest()+'\r\n')
